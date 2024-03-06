@@ -1,12 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Synapse Work</title>
     <link rel="stylesheet" href="style/css/index.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+    <style>
+        .bs {
+            background-color: red;
+            color: white;
+            padding: 20px;
+            margin: 20px;   
+            width: 200px;
+
+        }
+
+        .bswi {
+            color: white;
+            padding: 20px;
+            margin: 20px;
+            background-color: red;
+            width: 200px;
+
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Hello</h1>
+    <nav>
+        <img src="images/logo.png" alt="logo">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="first_section" id="hello">
+        <h1>Thura Lin Htut is the best</h1>
+    </section>
+    <section style="background-color: black; height: 100vh; " id="tigger1">
+        <h1>Thura Lin Htut is the best</h1>
+        <div class="bs" id="bs">
+            <p>The best solution for software development</p>
+        </div>
+    </section>
 </body>
+
 </html>
+
+<script>
+    var controller = new ScrollMagic.Controller();
+
+
+    var tween = gsap.to(".bs", 1, {
+        x: 100,
+        y: 100,
+        backgroundColor: "green",
+    })
+    var scene = new ScrollMagic.Scene({
+        triggerElement: "#tigger1",
+        offset : -500,
+        duration: 400,
+        triggerHook: 0,
+    }).
+    setTween(tween)
+    .setPin("#section2")
+    
+    .addIndicators()
+    .addTo(controller);
+    
+</script>
