@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Synapse Work</title>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="style/css/index.css" />
+    <link rel="stylesheet" href="style/css/partical.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+
+    <link rel="stylesheet" href="style/css/store.css" />
+  </head>
+
+  <body id="body">
+    <nav
+      class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600"
+    >
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      >
+        <a
+          href="index.html"
+          class="flex items-center space-x-3 rtl:space-x-reverse"
+        >
+          <img
+            src="images/logo.png"
+            class="h-8"
+            style="object-fit: contain"
+            alt="Synapse Work Logo"
+          />
+          <h1 class="logo-text">Synapse Work</h1>
+        </a>
+        <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+          <button
+            type="button"
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          >
+            Get started
+          </button>
+          <button
+            data-collapse-toggle="navbar-sticky"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-sticky"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+        </div>
+        <div
+          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+          id="navbar-sticky"
+        >
+        <ul
+        class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
+      >
+        <li>
+          <a href="index.html" class="text-white navitem">Home</a>
+        </li>
+        <li>
+          <a href="store.html" class="text-white navitem">Store</a>
+        </li>
+        <li>
+          <a href="pascalx.html" class="text-white navitem">Pascal X</a>
+        </li>
+        <li>
+          <a href="service.html" class="text-white navitem">Services</a>
+        </li>
+        <li>
+          <a href="contactus.html" class="text-white navitem">Contact Us</a>
+        </li>
+        <li>
+          <a href="developer.html" class="text-white navitem">Developer</a>
+        </li>
+      </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="store-section first-section">
+        <div class="store_page">
+          <h1 class="text-4xl font-bold text-center">Our Store</h1>
+          <p class="text-md text-center">
+            You can download and view demo of our apps and website
+          </p>
+
+          <div class="InputContainer">
+            <input
+              type="text"
+              name="text"
+              class="input"
+              id="input"
+              placeholder="Search Software & Websites & API"
+            />
+            <i class="bi bi-search"></i>
+          </div>
+        </div>
+
+        <div class="software-glass-container">
+          <div class="">
+            <i class="bi bi-gear text-3xl mt-4"></i>
+            <h1 class="text-2xl font-bold text-left">Softwares</h1>
+            <p class="text-md text-left">
+              These softwares can use both Android & Desktop
+            </p>
+          </div>
+
+          <div class="software-container">
+            <div class="software-card">
+              <img
+                src="images/pascalx.png"
+                alt="Software 1"
+                class="software-img"
+              />
+              <h3 class="text-2xl font-bold mt-2">Pascal X</h3>
+              <p class="text-sm text-grey-200">
+                Pascal X is AI Based Software that can crop passport photos.
+              </p>
+              <button class="downloadbtn mt-2">
+                <i class="bi bi-download"></i>
+                Download
+              </button>
+            </div>
+
+            <div class="software-card">
+              <img
+                src="images/rapidretail.png"
+                alt="RapidRetail"
+                class="software-img"
+              />
+              <h3 class="text-2xl font-bold mt-2">RapidRetail</h3>
+              <p class="text-sm text-grey-200">
+                RapidRetail POS is a standard pos system for minmart.
+              </p>
+              <button class="downloadbtn mt-2">
+                <i class="bi bi-download"></i>
+                Download
+              </button>
+            </div>
+
+            <div class="software-card">
+              <img
+                src="images/ucsdvoting.png"
+                alt="ucsdvoting"
+                class="software-img"
+              />
+              <h3 class="text-2xl font-bold mt-2">UCSD Voting</h3>
+              <p class="text-sm text-grey-200">
+                UCSD Voting app is voting system for university of computer
+                studies Dawei
+              </p>
+              <button class="downloadbtn mt-2">
+                <i class="bi bi-download"></i>
+                Download
+              </button>
+            </div>
+
+            <div class="software-card">
+              <img
+                src="images/logo1.png"
+                alt="ucsdvoting"
+                class="software-img"
+              />
+              <h3 class="text-2xl font-bold mt-2">Synapse Work</h3>
+              <p class="text-sm text-grey-200">
+                Synapse Work is learning platform for computer scinece student
+              </p>
+              <button class="downloadbtn mt-2">
+                <i class="bi bi-download"></i>
+                Download
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="software-glass-container">
+          <div class="">
+            <i class="bi bi-globe text-3xl mt-4"></i>
+            <h1 class="text-2xl font-bold text-left">Websites</h1>
+            <p class="text-md text-left">
+              These websites can be view directly by clicking this
+              <i>view </i> button
+            </p>
+          </div>
+
+          <div class="software-container">
+            <div class="website-card">
+              <img
+                src="images/empiretylh.jpg"
+                alt="Software 1"
+                class="software-img"
+              />
+              <h3 class="text-xl font-bold mt-2">Thura Lin Htut Portfolio</h3>
+              <p class="text-sm text-grey-200 mb-5">
+                This is my simple text-editor like portfolio
+              </p>
+
+              <a href="https://empiretylh.github.io/ucsdvote" class="viewbtn">
+                <i class="bi bi-eye"></i>
+                View</a
+              >
+            </div>
+
+            <div class="website-card">
+              <img
+                src="images/ucsdweb.jpg"
+                alt="Software 1"
+                class="software-img"
+              />
+              <h3 class="text-xl font-bold mt-2">Voting Admin Panel</h3>
+              <p class="text-sm text-grey-200 mb-5">
+                This is admin panel for ucsd voting system
+              </p>
+
+              <a href="https://empiretylh.github.io/ucsdvote" class="viewbtn">
+                <i class="bi bi-eye"></i>
+                View</a
+              >
+            </div>
+
+            <div class="website-card">
+              <img
+                src="images/npcomputer.png"
+                alt="Software 1"
+                class="software-img"
+              />
+              <h3 class="text-xl font-bold mt-2">NP Computer</h3>
+              <p class="text-sm text-grey-200 mb-5">
+                This is NP Computer website for computer shop
+              </p>
+
+              <a href="https://npweb.pythonanywhere.com" class="viewbtn">
+                <i class="bi bi-eye"></i>
+                View</a
+              >
+            </div>
+
+            
+          </div>
+        </div>
+
+        <div class="software-glass-container">
+          <div class="">
+            <i class="bi bi-link text-3xl mt-4"></i>
+            <h1 class="text-2xl font-bold text-left">API</h1>
+            <p class="text-md text-left">
+              This is API that can be use for your project
+              <i>view </i> button
+            </p>
+          </div>
+
+          <div class="software-container">
+            <div class="website-card">
+              <img
+                src="images/votingapi.png"
+                alt="Votingapi"
+                class="software-img"
+              />
+              <h3 class="text-xl font-bold mt-2 ">Voting API</h3>
+               <p class="text-md text-left mb-3">
+                This is ucsd voting app api that use python-django
+            </p>
+              <a href="https://csvote.pythonanywhere.com/api/checkcode" class="viewbtn">
+                <i class="bi bi-eye"></i>
+                Check</a
+              >
+
+            </div>
+
+            <div class="website-card">
+              <img
+                src="images/rapidretailapip.png"
+                alt="RapidRetailAPI"
+                class="software-img"
+              />
+              <h3 class="text-xl font-bold mt-2 ">RapidRetail API</h3>
+               <p class="text-md text-left mb-3">
+                This is RapidRetail POS API that use python-django
+            </p>
+              <a href="https://rapidreatilpos.pythonanywhere.com/api/login" class="viewbtn">
+                <i class="bi bi-eye"></i>
+                Check</a
+              >
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

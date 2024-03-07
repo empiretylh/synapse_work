@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Synapse Work</title>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="style/css/index.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+
+    <link rel="stylesheet" href="style/css/contactus.css" />
+  </head>
+
+  <body id="body">
+    <nav
+      class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600"
+    >
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      >
+        <a
+          href="index.html"
+          class="flex items-center space-x-3 rtl:space-x-reverse"
+        >
+          <img
+            src="images/logo.png"
+            class="h-8"
+            style="object-fit: contain"
+            alt="Synapse Work Logo"
+          />
+          <h1 class="logo-text">Synapse Work</h1>
+        </a>
+        <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+          <button
+            type="button"
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          >
+            Get started
+          </button>
+          <button
+            data-collapse-toggle="navbar-sticky"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-sticky"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+        </div>
+        <div
+          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+          id="navbar-sticky"
+        >
+          <ul
+            class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
+          >
+            <li>
+              <a href="index.html" class="text-white navitem">Home</a>
+            </li>
+            <li>
+              <a href="store.html" class="text-white navitem">Store</a>
+            </li>
+            <li>
+              <a href="pascalx.html" class="text-white navitem">Pascal X</a>
+            </li>
+            <li>
+              <a href="service.html" class="text-white navitem">Services</a>
+            </li>
+            <li>
+              <a href="contactus.html" class="text-white navitem">Contact Us</a>
+            </li>
+            <li>
+              <a href="developer.html" class="text-white navitem">Developer</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="store-section first-section">
+        <div class="store_page">
+          <div style="display: flex; flex-direction: row; align-items: center">
+            <i class="bi bi-chat text-3xl mr-3"></i>
+            <h1 class="text-4xl font-bold text-center">Contact Us</h1>
+          </div>
+          <p class="text-md text-center">
+            You can contact us for any query. We are always here to help you.
+          </p>
+        </div>
+
+        <div class="software-glass-container service-card-container ">
+         
+          <div class="service-card">
+            <i class="bi bi-telephone text-3xl"></i>
+            <h1 class="text-2xl font-bold">Phone</h1>
+            <p class="text-md font-sans">
+              You can contact us by calling us on our phone number. Our phone
+              number is <strong style="color:rgb(255, 255, 255); font-weight: bold; font-size: larger;"> +959 796632873</strong>
+            </p>
+          </div>
+
+          <div class="service-card">
+            <i class="bi bi-collection text-3xl"></i>
+            <h1 class="text-2xl font-bold">Social</h1>
+            <p>
+              You can also contact us through social media. We are available on
+              Facebook, Twitter, Instagram and LinkedIn. You can send us a
+              message on any of these platforms.
+            </p>
+            <div style="margin-top: 10px;">
+              <ul style="display: flex; flex-direction: row; justify-content: space-around;">
+                <li>
+                  <a href="#_">
+                    <i class="bi bi-facebook text-2xl"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#_">
+                    <i class="bi bi-twitter text-2xl"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#_">
+                    <i class="bi bi-instagram text-2xl"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#_">
+                    <i class="bi bi-linkedin text-2xl"></i>
+                  </a>
+              </ul>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <i class="bi bi-envelope text-3xl"></i>
+            <h1 class="text-2xl font-bold">Email</h1>
+            <p class="text-md font-sans">
+              You can also contact us by sending us an email. Our email address
+              is <strong style="color:rgb(255, 255, 255); font-weight: bold; font-size: 16px;">
+                synapseworksupport@gmail.com
+                </strong>
+
+            </p>
+          </div>
+
+          
+          <div class="service-card" style="width:80%; height: 400px;">
+            <div class="flex flex-row items-center mb-2">  
+            <i class="bi bi-map text-3xl"></i>
+            <h1 class="text-2xl font-bold ml-2">Map</h1>
+            </div>
+          
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1535.757165624964!2d98.20740920784124!3d14.08516273088001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e50bc5a98bcb21%3A0x6e77729e24630648!2sUniversity%20of%20Computer%20Studies%20(Dawei)!5e0!3m2!1sen!2smm!4v1709844546332!5m2!1sen!2smm" width="100%" height="90%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </p>
+          </div>
+        </div>
+
+        <div class="software-glass-container w-full">
+          <form action="contactus.php" method="post" class="contact-form">
+            <h1 class="text-2xl font-bold">Contact Form</h1>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="form-control"
+                placeholder="Enter your name"
+              />
+
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="form-control"
+                placeholder="Enter your email"
+              />
+
+              <label for="message">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                class="form-control"
+                placeholder="Enter your message"
+              ></textarea>
+
+              <button type="submit" class="btn btn-primary">
+                <i class="bi bi-chat text-2xl"></i>
+                Send</button>
+              </div>
+
+              </form>
+
+        </div>
+
+      </section>
+    </main>
+
+    <footer style="height: 50vh; width: 100vw; align-items: center; padding: 100px; margin-top: 20px; " class="footer_section">
+      <div class="container grid grid-cols-3">
+          <div class="footer-logo">
+            <img src="images/logo.png" alt="synapse work logo" style="width: 100px; height: 100px; object-fit:  contain ;"/>
+            <h1 class="logo-text">Synapse Work</h1>
+            <div class="footer-social">
+              <ul>
+                <li>
+                  <a href="#_">
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#_">
+                    <i class="bi bi-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#_">
+                    <i class="bi bi-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#_">
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+              </div>
+          </div>
+          <div class="footer-list">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="store.html">Store</a></li>
+              <li><a href="pascalx.html">Pascal X</a></li>
+              <li><a href="service.html">Services</a></li>
+              <li><a href="contactus.html">Contact Us</a></li>
+              <li><a href="developer.html">Developer</a></li>
+            </ul>
+          </div>
+          
+          <div>
+            <p class="text-md font-mono">
+              Synapse Work is the most powerful and easy to use platform for
+              building software applications. We offer learning platform for
+              computer science students. It has a lot of courses and tutorials
+              for students. It is a great platform for learning. And also offer
+              a lot of free courses for students.
+            </p>
+          </div>
+
+      </div>
+      <small class="text-md font-mono mt-4 text-center">
+        <i class="bi bi-heart-fill"></i> Synapse Work 2021 - 2024 &copy; All Rights Reserved
+        <br>
+        Developed by EMPIRE Team
+      </small>
+  </footer>
+  </body>
+</html>

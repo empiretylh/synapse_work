@@ -32,7 +32,7 @@
         class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
       >
         <a
-          href="https://flowbite.com/"
+          href="index.html  "
           class="flex items-center space-x-3 rtl:space-x-reverse"
         >
           <img
@@ -79,28 +79,28 @@
           class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
           id="navbar-sticky"
         >
-          <ul
-            class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
-          >
-            <li>
-              <a href="#_" class="text-white navitem">Home</a>
-            </li>
-            <li>
-              <a href="#_" class="text-white navitem">Store</a>
-            </li>
-            <li>
-              <a href="#_" class="text-white navitem">Pascal X</a>
-            </li>
-            <li>
-              <a href="#_" class="text-white navitem">Services</a>
-            </li>
-            <li>
-              <a href="#_" class="text-white navitem">Contact Us</a>
-            </li>
-            <li>
-              <a href="#_" class="text-white navitem">Developer</a>
-            </li>
-          </ul>
+        <ul
+        class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
+      >
+        <li>
+          <a href="index.html" class="text-white navitem">Home</a>
+        </li>
+        <li>
+          <a href="store.html" class="text-white navitem">Store</a>
+        </li>
+        <li>
+          <a href="pascalx.html" class="text-white navitem">Pascal X</a>
+        </li>
+        <li>
+          <a href="service.html" class="text-white navitem">Services</a>
+        </li>
+        <li>
+          <a href="contactus.html" class="text-white navitem">Contact Us</a>
+        </li>
+        <li>
+          <a href="developer.html" class="text-white navitem">Developer</a>
+        </li>
+      </ul>
         </div>
       </div>
     </nav>
@@ -157,9 +157,9 @@
             class="jwot cursor-pointer"
             style="margin-top: 20px; background-color: none"
           >
-            <a href="#_">Download App</a>
+            <a href="download/Synapse Work Beta.apk" download>Download App</a>
             <i class="bi bi-arrow-right"></i>
-          </div>
+          </div>  
         </div>
       </section>
     </div>
@@ -252,6 +252,7 @@
            <li>Pascal X</li>
            <li>Useful Software Myanmar</li>
            <li>RapidRetail POS</li>
+           <li>UCSD Voting</li>
           </ul>
        </div>
 
@@ -437,7 +438,7 @@
     
 
     <img src="images/swphone.png" class="phoneimg" alt="phone image" />
-    <footer style="height: 20vh; width: 100vw; margin-top: calc(700vh - 200px); align-items: center; " class="second_section">
+    <footer style="height: 50vh; width: 100vw; align-items: center; margin-top: 350%; " class="second_section">
         <div class="container grid grid-cols-3">
             <div class="footer-logo">
               <img src="images/logo.png" alt="synapse work logo" style="width: 100px; height: 100px; object-fit:  contain ;"/>
@@ -469,15 +470,15 @@
             </div>
             <div class="footer-list">
               <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#store">Store</a></li>
-                <li><a href="#pascalx">Pascal X</a></li>
-                <li><a href="#services">Services</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="pascalx.html">Pascal X</a></li>
+                <li><a href="service.html">Services</a></li>
                 <li><a href="#contactus">Contact Us</a></li>
                 <li><a href="#developer">Developer</a></li>
               </ul>
             </div>
-           
+            
             <div>
               <p class="text-md font-mono">
                 Synapse Work is the most powerful and easy to use platform for
@@ -485,8 +486,6 @@
                 computer science students. It has a lot of courses and tutorials
                 for students. It is a great platform for learning. And also offer
                 a lot of free courses for students.
-
-
               </p>
             </div>
 
@@ -536,7 +535,6 @@
       start: "top 0px",
       end: "bottom 100%",
       scrub: 2,
-      markers: true,
     },
     rotation: 20,
     y: 320,
@@ -556,6 +554,8 @@
       scrub: true,
       snap: 1 / (sections.length - 1),
       end: () => "+=" + document.querySelector(".panelcontainer").offsetWidth,
+      anticipatePin:1,   // 
+
     },
   });
 

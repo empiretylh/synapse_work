@@ -1,0 +1,209 @@
+.store_page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;    
+  }
+
+
+  .store-section {
+    width: 90%;
+    height: auto;
+  }
+
+  .software-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+   
+  }
+
+  .software-glass-container {
+    margin-top: 50px;
+    width: 100%;
+    background: rgba(74, 68, 247, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+
+    padding:20px;
+  }
+
+  .software-card {
+    width: 190px;
+    margin: 10px;
+    border-radius: 15px;
+    padding: 10px;
+    color:black;
+    background-color: rgb(230, 230, 230);
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+  .website-card:hover {
+    transform: scale(1.1);
+  }
+
+
+  .website-card img {
+    border-radius: 15px;
+
+  }
+
+  .website-card {
+    width: 300px;
+    margin: 10px;
+    border-radius: 15px;
+    padding: 10px;
+    color:black;
+    background-color: rgb(230, 230, 230);
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+  .software-card:hover {
+    transform: scale(1.1);
+  }
+
+
+  .software-card img {
+    border-radius: 15px;
+
+  }
+
+  .downloadbtn {
+    padding : 10px;
+    background-color: rgb(0, 112, 240);
+    border-radius: 15px;
+    color:white;
+
+  }
+
+  .viewbtn{
+    margin-top: 50px;
+  
+      padding : 10px;
+      background-color: rgb(0, 112, 240);
+      border-radius: 15px;
+      color:white;
+  
+  }
+
+  .downloadbtn:hover {
+    background-color: rgb(0, 112, 240);
+    color:white;
+    transform: scale(1.1);
+  }
+
+  .service-card-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+
+  .service-card {
+    width: 300px;
+    min-height: 300px;
+    margin: 10px;
+    border-radius: 15px;
+    padding: 20px;
+    color:white;
+    background-color: rgba(230, 230, 230, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+
+  .service-card:hover {
+    transform: scale(1.1);
+  }
+
+
+  .footer_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rebeccapurple;
+    height: 100vh;
+    backdrop-filter: blur(10px);
+    width: 70%;
+  }
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.contact-form h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form .form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.contact-form .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+}
+
+.contact-form .form-control::placeholder {
+    color: #999;
+}
+
+.contact-form .form-control:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+.contact-form .btn {
+    width: 100%;
+    color: #fff;
+    background-color: #007BFF;
+    border-color: #007BFF;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.contact-form .btn:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
