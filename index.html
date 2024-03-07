@@ -11,7 +11,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
     <link rel="stylesheet" href="style/css/index.css" />
-    <link rel="stylesheet" href="style/css/partical.css"/>
+    <link rel="stylesheet" href="style/css/partical.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       rel="stylesheet"
@@ -23,7 +23,7 @@
     <script src="js/lib/stats.js"></script>
   </head>
 
-  <body id="body" >
+  <body id="body">
     <nav
       class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600"
     >
@@ -103,54 +103,127 @@
         </div>
       </div>
     </nav>
-  
-    <section class="first_section" >
-      <div id="particles-js"></div>
-      <div class="first-animate" id="goanimate" >
-        <img
-          src="images/logo.png"
-          style="width: 100px; margin-bottom: 20px; margin-top: -100px;"
-          class="animate-bounce"
-        />
-        <h1 class="text-2xl font-bold font-mono text-center">
-          Rapidly Build Your Future App with Synapse Work
-        </h1>
-        <p class="text-lg font-medium text-center font-sans">
-          Synapse Work is the most powerful and easy to use platform for
-          building software applications.
-        </p>
-        <div class="getstartedbtn cursor-pointer" style="margin-top: 20px">
-          <a href="#_"> Get Started </a>
-          <i class="bi bi-arrow-right"></i>
-        </div>
-      </div>
-
-      <div class="container landcontainer" id="tigger2">
-        <div class="flex flex-row">
-          <div class="cardglass">
-            <i class="bi bi-people text-2xl"></i>
-            <h1 class="text-mdfont-mono">User Client</h1>
-            <h2 class="text-lg font-mono">5000+</h2>
+    <div class="snapscroll">
+      <section class="first_section">
+        <div id="particles-js"></div>
+        <div class="first-animate" id="goanimate">
+          <img
+            src="images/logo.png"
+            style="width: 100px; margin-bottom: 20px; margin-top: 100px"
+            class="animate-bounce"
+          />
+          <h1 class="text-2xl font-bold font-mono text-center">
+            Rapidly Build Your Future App with Synapse Work
+          </h1>
+          <p class="text-lg font-medium text-center font-sans">
+            Synapse Work is the most powerful and easy to use platform for
+            building software applications.
+          </p>
+          <div class="getstartedbtn cursor-pointer" style="margin-top: 20px">
+            <a href="#_"> Get Started </a>
+            <i class="bi bi-arrow-right"></i>
           </div>
+        </div>
 
-          <div class="cardglass">
-            <i class="bi bi-code-slash text-2xl"></i>
-            <h1 class="text-mdfont-mono">Active Software</h1>
-            <h2 class="text-lg font-mono">2500+</h2>
-          </div>        
-           
-     </div>
-     <img src="images/swphone.png" class="phoneimg" alt="phone image" />
-       
-      </div>
-    </section>
-    <section style="height: 100vh" id="tigger1">
-      
-      <h1 class="text-2xl">We developed many website and application for our client in the moment </h1>
-      <div class="bs" id="bs">
-        <p>The best solution for software development</p>
-      </div>
-    </section>
+        <div class="container landcontainer" id="tigger2">
+          <div class="flex flex-row">
+            <div class="cardglass">
+              <i class="bi bi-people text-2xl"></i>
+              <h1 class="text-mdfont-mono">User Client</h1>
+              <h2 class="text-lg font-mono">5000+</h2>
+            </div>
+
+            <div class="cardglass">
+              <i class="bi bi-code-slash text-2xl"></i>
+              <h1 class="text-mdfont-mono">Developed Software</h1>
+              <h2 class="text-lg font-mono">100+</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section style="height: 100vh" class="second_section">
+        <div style="width: 70%">
+          <div>
+            <i class="bi bi-code-square text-2xl"></i>
+            <h1 class="text-2xl font-bold font-sans">Learning Platform</h1>
+          </div>
+          <p class="text-lg" style="width: 70%">
+            We offer learning platform for computer science students. It has a
+            lot of courses and tutorials for students. It is a great platform
+            for learning. And also offer a lot of free courses for students.
+          </p>
+          <div
+            class="jwot cursor-pointer"
+            style="margin-top: 20px; background-color: none"
+          >
+            <a href="#_"> Join With Our Team </a>
+            <i class="bi bi-arrow-right"></i>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="panelcontainer">
+      <section style="height: 100vh" class="panel second_section">
+        <div style="width: 70%">
+          <div>
+            <i class="bi bi-code-square text-2xl"></i>
+            <h1 class="text-2xl font-bold font-sans">Development</h1>
+          </div>
+          <p class="text-lg" style="width: 70%">
+            We developed many software for our clients. We have a team of
+            experts in software development and we are always ready to help you.
+          </p>
+          <div
+            class="jwot cursor-pointer"
+            style="margin-top: 20px; background-color: none"
+          >
+            <a href="#_"> Join With Our Team </a>
+            <i class="bi bi-arrow-right"></i>
+          </div>
+        </div>
+      </section>
+
+      <section style="height: 100vh" class="panel second_section ps">
+        <div style="width: 70%">
+          <div>
+            <i class="bi bi-code-square text-2xl"></i>
+            <h1 class="text-2xl font-bold font-sans">Development</h1>
+          </div>
+          <p class="text-lg" style="width: 70%">
+            We developed many software for our clients. We have a team of
+            experts in software development and we are always ready to help you.
+          </p>
+          <div
+            class="jwot cursor-pointer"
+            style="margin-top: 20px; background-color: none"
+          >
+            <a href="#_"> Join With Our Team </a>
+            <i class="bi bi-arrow-right"></i>
+          </div>
+        </div>
+      </section>
+      <section style="height: 100vh" class="panel second_section">
+        <div style="width: 70%">
+          <div>
+            <i class="bi bi-code-square text-2xl"></i>
+            <h1 class="text-2xl font-bold font-sans">Development</h1>
+          </div>
+          <p class="text-lg" style="width: 70%">
+            We developed many software for our clients. We have a team of
+            experts in software development and we are always ready to help you.
+          </p>
+          <div
+            class="jwot cursor-pointer"
+            style="margin-top: 20px; background-color: none"
+          >
+            <a href="#_"> Join With Our Team </a>
+            <i class="bi bi-arrow-right"></i>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <img src="images/swphone.png" class="phoneimg" alt="phone image" />
   </body>
 </html>
 <script>
@@ -176,32 +249,63 @@
   requestAnimationFrame(update);
 </script>
 <script>
-  // var controller = new ScrollMagic.Controller();
+let container = document.querySelector('html');
+let target = document.querySelector('.ps'); // replace with your target element selector
 
-  // var tween = gsap.to("#bs", 1, {
-  //   opacity: 0,
-  //   y: -100,
-  //   scale: 0.5,
-  //   rotation: 360,
-  //   backgroundColor: "blue",
-  //   ease: "power1.inOut",
-  // });
+window.addEventListener('scroll', function() {
+  let targetPosition = target.getBoundingClientRect();
+  if (targetPosition.top <= 0) {
+    // Target element has reached the top of the viewport, disable scroll snap
+    container.style.scrollSnapType = 'x mandatory';
+  } else {
+    // Target element is not at the top, enable scroll snap
+    container.style.scrollSnapType = 'y mandatory';
+  }
+});
+
 
   gsap.registerPlugin(ScrollTrigger);
 
-  gsap.to("landcontainer", {
+  gsap.to(".phoneimg", {
     scrollTrigger: {
-      trigger: "#tigger1",
-      start: "top center",
-      end: "bottom center",
-      scrub: 1,
+      trigger: ".phoneimg",
+      start: "top 0px",
+      end: "bottom 100%",
+      scrub: 2,
       markers: true,
     },
-    x: 500,
-    rotation: 360,
-    scale: 0.5,
-    backgroundColor: "blue",
-    ease: "power1.inOut",
+    rotation: 20,
+    y: 320,
+    x: -200,
+
+    pin: true,
   });
 
+  let sections = gsap.utils.toArray(".panel");
+
+  gsap.to(sections, {
+    xPercent: -100 * (sections.length - 1),
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".panelcontainer",
+      pin: true,
+      scrub: 1,
+      snap: 1 / (sections.length - 1),
+      end: () => "+=" + document.querySelector(".panelcontainer").offsetWidth,
+    },
+  });
+
+  // gsap.to(".landcontainer", {
+  //   scrollTrigger: {
+  //     trigger: "#tigger1",
+
+  //     scrub: 1,
+  //     markers: true,
+  //   },
+  //   x: 500,
+  //   rotation: 360,
+  //   scale: 0.5,
+  //   backgroundColor: "blue",
+  //   ease: "power1.inOut",
+  // });
 </script>

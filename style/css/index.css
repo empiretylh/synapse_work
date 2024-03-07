@@ -4,6 +4,7 @@
   font-family: "Roboto", sans-serif;
 }
 
+
 body {
   background: linear-gradient(to right, rgb(153, 0, 255), rgb(65, 4, 162));
   background-image: url(../../images/bg.jpg);
@@ -45,10 +46,16 @@ html::-webkit-scrollbar-thumb {
   font-size: 20px !important;
 }
 
+html {
+  scroll-snap-type: y mandatory;
+}
+
+
 section {
   margin-right: auto;
   margin-left: auto;
   height: 100vh;
+
 }
 
 .navbar {
@@ -149,6 +156,18 @@ section {
   height: 100vh;
   background-color: rgb(24, 133, 250, 0.1);
   backdrop-filter: blur(10px);
+  scroll-snap-align: start;
+}
+
+.second_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 150px;
+  height: 100vh;
+  background-color: rgb(24, 133, 250, 0.1);
+  backdrop-filter: blur(10px);
+  scroll-snap-align: start;
 }
 
 .bs {
@@ -219,6 +238,31 @@ section {
   margin-left: 30px;
 }
 
+
+.jwot {
+  max-width: 200px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in;
+  text-align: left;
+}
+
+.jwot:hover {
+  max-width: 300px;
+ color: rgb(29, 103, 243);
+  font-weight: bold;
+  align-items: center;
+  transition: all 0.3s ease-in;
+}
+
+.jwot i {
+  margin-left: 5px;
+  transition: all 0.3s ease-in;
+}
+
+.jwot:hover i {
+  margin-left: 30px;
+}
+
 .landcontainer {
   width: 90% !important;
   margin-top: 100px !important;
@@ -256,10 +300,20 @@ section {
 
 .phoneimg {
     position: absolute;
-    width: 600px;
+    width: 250px;
     rotate: -20deg;
-    top: 30%;
-    right:-150px;
-  
+    top: 70%;
+    right:50px;
+    z-index: 1;
     animation: phone 2s ease-in-out;
+}
+.panelcontainer{
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+
+  backdrop-filter: blur(10px);
+}
+.panel {
+  width: 100vw !important;
 }
