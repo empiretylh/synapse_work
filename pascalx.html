@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Synapse Work</title>
+    <title>Synapse Work-Pascal X</title>
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
@@ -19,6 +19,7 @@
     />
 
     <link rel="stylesheet" href="style/css/store.css" />
+    <link rel="stylesheet" href="style/css/pascalx.css" />
   </head>
 
   <body id="body">
@@ -44,7 +45,8 @@
           <button
             type="button"
             class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-          >
+            onclick="window.location.href='store.html'"
+            >
             Get started
           </button>
           <button
@@ -104,214 +106,156 @@
 
     <main>
       <section class="store-section first-section">
-        <div class="store_page">
-          <h1 class="text-4xl font-bold text-center">Our Store</h1>
-          <p class="text-md text-center">
-            You can download and view demo of our apps and website
-          </p>
-
-          <div class="InputContainer">
-            <input
-              type="text"
-              name="text"
-              class="input"
-              id="input"
-              placeholder="Search Software & Websites & API"
+        <div class="software-glass-container" style="margin-top: 150px">
+          <div class="flex flex-row items-center gap-2">
+            <img
+              src="images/pascalx.png"
+              alt="Pascal X"
+              class="software-img"
+              style="width: 100px; height: 100px"
             />
-            <i class="bi bi-search"></i>
-          </div>
-        </div>
-
-        <div class="software-glass-container">
-          <div class="">
-            <i class="bi bi-gear text-3xl mt-4"></i>
-            <h1 class="text-2xl font-bold text-left">Softwares</h1>
-            <p class="text-md text-left">
-              These softwares can use both Android & Desktop
-            </p>
-          </div>
-
-          <div class="software-container">
-            <div class="software-card">
-              <img
-                src="images/pascalx.png"
-                alt="Software 1"
-                class="software-img"
-              />
-              <h3 class="text-2xl font-bold mt-2">Pascal X</h3>
-              <p class="text-sm text-grey-200">
-                Pascal X is AI Based Software that can crop passport photos.
+            <div class="flex flex-col ml-5">
+              <h1 class="text-4xl font-bold text-left font-mono">Pascal X</h1>
+              <p class="text-lg text-left font-sans">
+                Pascal X is AI Based Software that can crop passport photo in a
+                few seconds
               </p>
-              <button class="downloadbtn mt-2">
-                <i class="bi bi-download"></i>
+
+              <!-- download btn  -->
+              <a href="download/PascalXSetup.exe" class="pascalxdownload">
+                <i class="bi bi-download mr-2 text-2xl"></i>
                 Download
-              </button>
+              </a>
             </div>
-
-            <div class="software-card">
-              <img
-                src="images/rapidretail.png"
-                alt="RapidRetail"
-                class="software-img"
-              />
-              <h3 class="text-2xl font-bold mt-2">RapidRetail</h3>
-              <p class="text-sm text-grey-200">
-                RapidRetail POS is a standard pos system for minmart.
-              </p>
-              <button class="downloadbtn mt-2">
-                <i class="bi bi-download"></i>
-                Download
-              </button>
-            </div>
-
-            <div class="software-card">
-              <img
-                src="images/ucsdvoting.png"
-                alt="ucsdvoting"
-                class="software-img"
-              />
-              <h3 class="text-2xl font-bold mt-2">UCSD Voting</h3>
-              <p class="text-sm text-grey-200">
-                UCSD Voting app is voting system for university of computer
-                studies Dawei
-              </p>
-              <button class="downloadbtn mt-2">
-                <i class="bi bi-download"></i>
-                Download
-              </button>
-            </div>
-
-            <div class="software-card">
-              <img
-                src="images/logo1.png"
-                alt="ucsdvoting"
-                class="software-img"
-              />
-              <h3 class="text-2xl font-bold mt-2">Synapse Work</h3>
-              <p class="text-sm text-grey-200">
-                Synapse Work is learning platform for computer scinece student
-              </p>
-              <button class="downloadbtn mt-2">
-                <i class="bi bi-download"></i>
-                Download
-              </button>
+            <div class="software-container pascalx-container">
+              <div class="flex flex-col">
+                <video
+                  src="download/PascalXTrailer.mp4"
+                  class="software-img"
+                  autoplay
+                  loop
+                  muted
+                  style="width: 100%; height: 100%; border-radius: 10px"
+                ></video>
+              </div>
             </div>
           </div>
-        </div>
+          <h2 class="text-md font-mono text-center mt-4">
+            Developed By Thura Lin Htut
+          </h2>
 
-        <div class="software-glass-container">
-          <div class="">
-            <i class="bi bi-globe text-3xl mt-4"></i>
-            <h1 class="text-2xl font-bold text-left">Websites</h1>
-            <p class="text-md text-left">
-              These websites can be view directly by clicking this
-              <i>view </i> button
-            </p>
+          <div class="software-glass-container">
+            <div class="flex flex-row items-center">
+              <div class="">
+                <i class="bi bi-bookmark text-3xl mt-4"></i>
+                <h1 class="text-2xl font-bold text-left">Features</h1>
+                <p class="text-md text-left">
+                  These are the features of Pascal X Software
+                </p>
+              </div>
+
+              <div class="flex flex-row gap-10 ml-auto font-mono">
+                <div class="flex flex-col items-center">
+                  <i class="bi bi-check-circle text-3xl"></i>
+                  <h1 class="text-md">AI Based</h1>
+                </div>
+
+                <div class="flex flex-col items-center">
+                  <i class="bi bi-stopwatch text-3xl"></i>
+                  <h1 class="text-md">Fast</h1>
+                </div>
+
+                <div class="flex flex-col items-center">
+                  <i class="bi bi-card-image text-3xl"></i>
+                  <h1 class="text-md">Resize Image</h1>
+                </div>
+
+                <div class="flex flex-col items-center">
+                  <i class="bi bi-file text-3xl"></i>
+                  <h1 class="text-md">Paper Size</h1>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div class="software-container">
-            <div class="website-card">
-              <img
-                src="images/empiretylh.jpg"
-                alt="Software 1"
-                class="software-img"
-              />
-              <h3 class="text-xl font-bold mt-2">Thura Lin Htut Portfolio</h3>
-              <p class="text-sm text-grey-200 mb-5">
-                This is my simple text-editor like portfolio
-              </p>
+          <div class="software-glass-container">
+            <div class="flex flex-row items-center">
+              <div class="">
+                <i class="bi bi-gear text-3xl mt-4"></i>
+                <h1 class="text-2xl font-bold text-left">
+                  System Requirements
+                </h1>
+                <p class="text-md text-left">
+                  This is minimum system requirements for Pascal X Software
+                </p>
+              </div>
 
-              <a href="https://empiretylh.github.io/ucsdvote" class="viewbtn">
-                <i class="bi bi-eye"></i>
-                View</a
-              >
+              <div class="flex flex-row gap-10 ml-auto font-mono">
+                <div class="flex flex-col items-center">
+                  <i class="bi bi-window text-3xl"></i>
+                  <h1 class="text-md">Window-10/11+</h1>
+                </div>
+
+                <div class="flex flex-col items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-memory" viewBox="0 0 16 16">
+                    <path d="M1 3a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.586a1 1 0 0 0 .707-.293l.353-.353a.5.5 0 0 1 .708 0l.353.353a1 1 0 0 0 .707.293H15a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zm.5 1h3a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5m5 0h3a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5m4.5.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5zM2 10v2H1v-2zm2 0v2H3v-2zm2 0v2H5v-2zm3 0v2H8v-2zm2 0v2h-1v-2zm2 0v2h-1v-2zm2 0v2h-1v-2z"/>
+                  </svg>
+                  <h1 class="text-md">Ram - 4 GB</h1>
+                </div>
+
+                <div class="flex flex-col items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-floppy" viewBox="0 0 16 16">
+                    <path d="M11 2H9v3h2z"/>
+                    <path d="M1.5 0h11.586a1.5 1.5 0 0 1 1.06.44l1.415 1.414A1.5 1.5 0 0 1 16 2.914V14.5a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 14.5v-13A1.5 1.5 0 0 1 1.5 0M1 1.5v13a.5.5 0 0 0 .5.5H2v-4.5A1.5 1.5 0 0 1 3.5 9h9a1.5 1.5 0 0 1 1.5 1.5V15h.5a.5.5 0 0 0 .5-.5V2.914a.5.5 0 0 0-.146-.353l-1.415-1.415A.5.5 0 0 0 13.086 1H13v4.5A1.5 1.5 0 0 1 11.5 7h-7A1.5 1.5 0 0 1 3 5.5V1H1.5a.5.5 0 0 0-.5.5m3 4a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5V1H4zM3 15h10v-4.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5z"/>
+                  </svg>
+                  <h1 class="text-md">1 GB</h1>
+                </div>
+
+                <div class="flex flex-col items-center">
+                  <i class="bi bi-cpu text-3xl"></i>
+                  <h1 class="text-md">Intel Pentinum</h1>
+                </div>
+              </div>
             </div>
-
-            <div class="website-card">
-              <img
-                src="images/ucsdweb.jpg"
-                alt="Software 1"
-                class="software-img"
-              />
-              <h3 class="text-xl font-bold mt-2">Voting Admin Panel</h3>
-              <p class="text-sm text-grey-200 mb-5">
-                This is admin panel for ucsd voting system
-              </p>
-
-              <a href="https://empiretylh.github.io/ucsdvote" class="viewbtn">
-                <i class="bi bi-eye"></i>
-                View</a
-              >
-            </div>
-
-            <div class="website-card">
-              <img
-                src="images/npcomputer.png"
-                alt="Software 1"
-                class="software-img"
-              />
-              <h3 class="text-xl font-bold mt-2">NP Computer</h3>
-              <p class="text-sm text-grey-200 mb-5">
-                This is NP Computer website for computer shop
-              </p>
-
-              <a href="https://npweb.pythonanywhere.com" class="viewbtn">
-                <i class="bi bi-eye"></i>
-                View</a
-              >
-            </div>
-
-            
-          </div>
-        </div>
-
-        <div class="software-glass-container">
-          <div class="">
-            <i class="bi bi-link text-3xl mt-4"></i>
-            <h1 class="text-2xl font-bold text-left">API</h1>
-            <p class="text-md text-left">
-              This is API that can be use for your project
-              <i>view </i> button
-            </p>
           </div>
 
-          <div class="software-container">
-            <div class="website-card">
-              <img
-                src="images/votingapi.png"
-                alt="Votingapi"
-                class="software-img"
-              />
-              <h3 class="text-xl font-bold mt-2 ">Voting API</h3>
-               <p class="text-md text-left mb-3">
-                This is ucsd voting app api that use python-django
-            </p>
-              <a href="https://csvote.pythonanywhere.com/api/checkcode" class="viewbtn">
-                <i class="bi bi-eye"></i>
-                Check</a
-              >
-
+          <div class="software-glass-container">
+            <div class="">
+              <i class="bi bi-cash text-3xl mt-4"></i>
+              <h1 class="text-2xl font-bold text-left">Pricing</h1>
+              <p class="text-md text-left">
+                This is the pricing for Pascal X Software
+              </p>
             </div>
 
-            <div class="website-card">
-              <img
-                src="images/rapidretailapip.png"
-                alt="RapidRetailAPI"
-                class="software-img"
-              />
-              <h3 class="text-xl font-bold mt-2 ">RapidRetail API</h3>
-               <p class="text-md text-left mb-3">
-                This is RapidRetail POS API that use python-django
-            </p>
-              <a href="https://rapidreatilpos.pythonanywhere.com/api/login" class="viewbtn">
-                <i class="bi bi-eye"></i>
-                Check</a
+            <div class="flex flex-row gap-5">
+              <div style="width: 100%">
+                <img
+                  src="images/pascaxads.png"
+                  style="width: 100%; height: 100%; border-radius: 15px"
+                  alt="Pascal X Ads"
+                />
+              </div>
+              <div
+                class="flex flex-col bg-red-500 w-full rounded-lg p-2 text-center justify-center"
               >
+                <h1 class="text-5xl font-bold">59,000 Ks</h1>
+                <h1 class="text-4xl font-mono mt-2">10 % Discount</h1>
+              </div>
             </div>
 
+            <div class="mt-5">
+              <img
+                src="images/pascalxhomepage.png"
+                style="width: 100%; height: 100%; border-radius: 15px"
+                alt="Pascal X Homepage"
+              />
+            </div>
           </div>
         </div>
       </section>
+      
     </main>
+    
   </body>
 </html>
